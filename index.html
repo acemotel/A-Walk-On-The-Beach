@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Walk On The Beach</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.65/Tone.js"
     integrity="sha512-zPKzRK1UzEHFTGD2Da3mEsab6jvS4nYk+zN91Ip4qLJUFOpKEvB7yCi2VGnT0OsEMqw/61pWSfpZLS/0JjD6hA=="
@@ -13,8 +14,12 @@
 
 <body>
     <div class="container">
-        <button id="play-button" onclick="play()">Play</button>
+        <h1 id="play-button" onclick="play()">PLAY</h1>
         <!-- video element -->
+        <video id="video" width="320" height="176" autoplay muted loop>
+            <source src="videos/video1.mp4" type="video/mp4" >
+            Your browser does not support HTML5 video.
+          </video>
     </div>
 
    

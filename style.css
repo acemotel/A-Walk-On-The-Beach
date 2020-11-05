@@ -18,8 +18,13 @@ body {
     justify-content: space-evenly;
 }
 
-h1 {
+.playBtn {
     margin: 0;
+}
+
+.playBtn:hover {
+    cursor: pointer;
+    color: #f5f5f5;
 }
 
 video {

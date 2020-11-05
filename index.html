@@ -14,7 +14,8 @@
 
 <body>
     <div class="container">
-        <h1 id="play-button" onclick="play()">PLAY</h1>
+        <h1 id="play" class="playBtn" onclick="play()" onmouseover="mouseOver()" onmouseout="mouseOut()">PLAY</h1>
+        <h1 id="stop" class="playBtn" onclick="stop()" onmouseover="mouseOver()" onmouseout="mouseOut()" style="display: none;">STOP</h1>
         <!-- video element -->
         <video id="video" width="320" height="176" autoplay muted loop>
             <source src="videos/video1.mp4" type="video/mp4" >

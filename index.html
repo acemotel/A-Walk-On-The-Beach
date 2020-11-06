@@ -8,22 +8,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.65/Tone.js"
-    integrity="sha512-zPKzRK1UzEHFTGD2Da3mEsab6jvS4nYk+zN91Ip4qLJUFOpKEvB7yCi2VGnT0OsEMqw/61pWSfpZLS/0JjD6hA=="
-    crossorigin="anonymous"></script>
+        integrity="sha512-zPKzRK1UzEHFTGD2Da3mEsab6jvS4nYk+zN91Ip4qLJUFOpKEvB7yCi2VGnT0OsEMqw/61pWSfpZLS/0JjD6hA=="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
+    
     <div class="container">
+
+        <div class="infoText">
+            <p><i>a walk on the beach</i></p>
+            <p>ace motel</p>
+            <p>.</p>
+            <p>a generative piece of music</p>
+            <p>soft piano, synths, samples from killowen beach</p>
+            <p>powered by tone.js</p>
+        </div>
+
         <h1 id="play" class="playBtn" onclick="play()" onmouseover="mouseOver()" onmouseout="mouseOut()">PLAY</h1>
-        <h1 id="stop" class="playBtn" onclick="stop()" onmouseover="mouseOver()" onmouseout="mouseOut()" style="display: none;">STOP</h1>
+        <h1 id="stop" class="playBtn" onclick="stop()" onmouseover="mouseOver()" onmouseout="mouseOut()"
+            style="display: none;">STOP</h1>
         <!-- video element -->
         <video id="video" width="320" height="176" autoplay muted loop>
-            <source src="videos/video1.mp4" type="video/mp4" >
+            <source src="videos/video1.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
-          </video>
+        </video>
     </div>
 
-   
+
     <script src="site.js"></script>
 </body>
 

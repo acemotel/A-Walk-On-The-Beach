@@ -60,7 +60,7 @@ const modorgan = new Tone.Sampler({
     curve: "linear"
 }).toDestination();
 
-texture.volume.value = -40;
+texture.volume.value = -35;
 let c = 0;
 let prevModNote = "";
 const loop = new Tone.Loop(function (time) {
@@ -100,9 +100,14 @@ const loop = new Tone.Loop(function (time) {
     c++;
 }, "4n").start(0);
 
-play = () => {
-    Tone.Transport.bpm.value = 100;
+Tone.Transport.bpm.value = 100;
+Tone.Master.volume.value = 15;
 
+play = () => {
+    console.log(Tone.context.state);
+    if (Tone.context.state !== 'running') {
+        Tone.context.resume();
+    }
     // Start the transport which is the main timeline
     Tone.Transport.start();
 

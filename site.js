@@ -66,8 +66,8 @@ let prevModNote = "";
 const loop = new Tone.Loop(function (time) {
     let note = randomNoteC(3, 5);
     let delay = Math.random() / 2;
-    if (randomIntFromInterval(0, 2) === 0) {
-        sampler.triggerAttackRelease(note, "1m", time + delay, Math.random());
+    if (randomIntFromInterval(0, 3) === 0) {
+        sampler.triggerAttackRelease(note, "1m", time + delay, Math.random() * 0.7);
         synth.triggerAttackRelease(note, "4n", time + delay);
         texture.triggerAttackRelease(randomNoteC(2, 6), "1m", time + delay);
     }
@@ -104,7 +104,6 @@ Tone.Transport.bpm.value = 100;
 Tone.Master.volume.value = 15;
 
 play = () => {
-    console.log(Tone.context.state);
     if (Tone.context.state !== 'running') {
         Tone.context.resume();
     }

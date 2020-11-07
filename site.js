@@ -113,6 +113,8 @@ play = () => {
     // Hide play btn, show stop btn
     document.getElementById("play").style.display = "none";
     document.getElementById("stop").style.display = "block";
+    document.body.style.backgroundColor = "#000000";
+
 }
 
 stop = () => {
@@ -121,6 +123,8 @@ stop = () => {
     // Hide stop btn, show play btn
     document.getElementById("play").style.display = "block";
     document.getElementById("stop").style.display = "none";
+    document.body.style.backgroundColor = "#f5f5f5";
+
 }
 
 randomNoteC = (x, y) => {
@@ -133,6 +137,7 @@ randomIntFromInterval = (min, max) => { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// These are for desktop users
 mouseOver = () => {
     document.body.style.backgroundColor = "#000000";
 }
@@ -140,3 +145,4 @@ mouseOver = () => {
 mouseOut = () => {
     document.body.style.backgroundColor = "#f5f5f5";
 }
+

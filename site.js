@@ -100,7 +100,7 @@ const loop = new Tone.Loop(function (time) {
     c++;
 }, "4n").start(0);
 
-Tone.Transport.bpm.value = 100;
+Tone.Transport.bpm.value = 80;
 Tone.Master.volume.value = 15;
 
 play = () => {
